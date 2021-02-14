@@ -7,6 +7,7 @@
 #include "allinclude.h"
 #undef BARRICADEINCLUDE
 
+#include <assert.h>
 
 
 

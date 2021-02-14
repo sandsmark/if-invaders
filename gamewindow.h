@@ -73,7 +73,7 @@ class Intro : public QWidget, public HallOfFame
     Q_OBJECT
 
 public:
-    Intro( uid_t p, QWidget *p = 0, const char *name = 0 );
+    Intro( uid_t pl, QWidget *p = 0, const char *name = 0 );
     ~Intro();
     void               readHiscore();
     void               displayScores();
