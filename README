@@ -1,0 +1,10 @@
+Run:
+
+qmake -project
+qmake
+make
+./si
+
+
+
+
