@@ -1,6 +1,7 @@
 #include "stl_score.h"
 
 
+#include <sys/stat.h>
 
 
 
@@ -99,6 +100,15 @@ HallOfFame :: HallOfFame( const std::string &s, const uint m )
     fname = s;
     scores = std::vector< Hiscore* >();
     scores.reserve( max_entries );
+    struct stat statbuf;
+    if (stat(fname.c_str(), &statbuf) != 0 || !statbuf.st_size) {
+        FILE *f = fopen( fname.c_str(), "w+" );
+        if (!f)
+            fatal( "Unable to create default hiscore..." );
+
+        fprintf(f, "1\n1000 1765\n");
+        fclose(f);
+    }
 }
 
 
