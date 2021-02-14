@@ -1,14 +1,15 @@
 #include "shuttle.h"
 
+#include "pixmaps/ship2.xpm"
 
 
 
 
-Shuttle :: Shuttle( int sp, int x, int y, const char *file )
+Shuttle :: Shuttle( int sp, int x, int y )
         :  speed( sp )
 {
   
-    picture = new QPixmap( file );
+    picture = new QPixmap( ship2_xpm );
     if ( picture->isNull() ) 
 	fatal( "cannot initialize shuttle" );
 

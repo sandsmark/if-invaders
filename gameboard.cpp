@@ -1,5 +1,8 @@
 #include "gameboard.h"
 
+#include "pixmaps/spermb2.xpm"
+#include "pixmaps/sperma2.xpm"
+#include "pixmaps/ship_bullet2.xpm"
 
 
 
@@ -75,9 +78,9 @@ GameBoard :: initDecorations()
 {
   
     setBackgroundColor( QColor( black ) );
-    shuttleShotPix = new QPixmap( SHUTTLESHOTPIX );
-    alienShotPix1 = new QPixmap( ALIENSHOT1 );
-    alienShotPix2 = new QPixmap( ALIENSHOT2 );
+    shuttleShotPix = new QPixmap( ship_bullet2_xpm );
+    alienShotPix1 = new QPixmap( sperma2 );
+    alienShotPix2 = new QPixmap( spermb2 );
     currAlienShotPix = alienShotPix1;
 
     if ( alienShotPix1->isNull() || alienShotPix2->isNull() ) 

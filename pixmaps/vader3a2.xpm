@@ -1,5 +1,5 @@
 /* XPM */
-static char *vader3a2[] = {
+static const char *vader3a2[] = {
 /* width height num_colors chars_per_pixel */
 "    28    18        2            1",
 /* colors */

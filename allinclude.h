@@ -73,10 +73,6 @@ extern void startUser();
 #include <qpixmap.h>
 #include <qpainter.h>
 
-#ifndef SHUTTLEPIX
-#define SHUTTLEPIX "pixmaps/ship2.xpm"
-#endif
-
 #endif
 
 
@@ -105,16 +101,6 @@ extern void startUser();
 #include "shuttle.h"
 #include "barricade.h"
 
-#ifndef SHUTTLESHOTPIX
-#define SHUTTLESHOTPIX "pixmaps/ship_bullet2.xpm"
-#endif   
-
-#ifndef ALIENSHOT1
-#define ALIENSHOT1  "pixmaps/sperma2.xpm"
-#define ALIENSHOT2  "pixmaps/spermb2.xpm"
-#endif
-
-
 // NON-PORTABLE. 
 #include <X11/Xlib.h>
 
@@ -139,10 +125,6 @@ extern void startUser();
 #include <qpainter.h>
 #include <qwidget.h>
 
-#ifndef WALLPIX
-#define WALLPIX "pixmaps/barricade2.xpm"
-#endif
-
 #endif
 
 
@@ -155,24 +137,5 @@ extern void startUser();
 #include <qrect.h>
 #include <qpixmap.h>
 #include <qpainter.h>
-
-#ifndef SILLYPIX1
-#define SILLYPIX1  "pixmaps/vader1a2.xpm"
-#define SILLYPIX2  "pixmaps/vader1b2.xpm"
-#endif
-
-#ifndef CLEVERPIX1
-#define CLEVERPIX1 "pixmaps/vader2a2.xpm"
-#define CLEVERPIX2 "pixmaps/vader2b2.xpm"
-#endif
-
-#ifndef FATPIX1 
-#define FATPIX1    "pixmaps/vader3a2.xpm"
-#define FATPIX2    "pixmaps/vader3b2.xpm"
-#endif
-
-#ifndef BIGBOSSPIX
-#define BIGBOSSPIX "pixmaps/spacer2.xpm"
-#endif
 
 #endif

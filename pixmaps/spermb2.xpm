@@ -1,5 +1,5 @@
 /* XPM */
-static char *spermb2[] = {
+static const char *spermb2[] = {
 /* width height num_colors chars_per_pixel */
 "     6    16        2            1",
 /* colors */

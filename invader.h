@@ -102,8 +102,7 @@ public:
     ~SillyInvader();
 
     // static members are best init'ed by static functions
-    static void   initPicture( const char *file = SILLYPIX1,
-			     const char *file2 = SILLYPIX2 );
+    static void   initPicture( );
 
     bool          contains( const QRect& );
     
@@ -129,8 +128,7 @@ public:
     CleverInvader();
     ~CleverInvader();
 
-    static void    initPicture( const char *file = CLEVERPIX1,
-			     const char *file2 = CLEVERPIX2 );
+    static void    initPicture( );
 
     bool           contains( const QRect& );
 
@@ -156,8 +154,7 @@ public:
     FatInvader();
     ~FatInvader();
 
-    static void   initPicture( const char *file = FATPIX1,
-			       const char *file2 = FATPIX2 );
+    static void   initPicture( );
 
     bool          contains( const QRect& );
     
@@ -185,7 +182,7 @@ public:
     BigBoss( int );
     ~BigBoss();
 
-    void          initPicture( const char *file = BIGBOSSPIX );
+    void          initPicture( );
     
     bool          contains( const QRect& );
 

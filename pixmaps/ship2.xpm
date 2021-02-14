@@ -1,5 +1,5 @@
 /* XPM */
-static char * ship2_xpm[] = {
+static const char * ship2_xpm[] = {
 "42 18 5 1",
 " 	c #000000000000",
 ".	c #FFFFFFFF0000",

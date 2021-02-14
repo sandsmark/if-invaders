@@ -1,5 +1,5 @@
 /* XPM */
-static char *wall3[] = {
+static const char *wall3[] = {
 /* width height num_colors chars_per_pixel */
 "    60     10        2            1",
 /* colors */

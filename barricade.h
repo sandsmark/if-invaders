@@ -35,7 +35,7 @@ class BarricadeSegment
 public:
 
     // what the hell does 'no' do?
-    BarricadeSegment( int no, const char *filename = WALLPIX );
+    BarricadeSegment( int no );
     ~BarricadeSegment();
   
     bool   takeDamageFromBelow( const QRect &area );

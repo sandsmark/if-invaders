@@ -1,6 +1,13 @@
 #include "invader.h"
 
 
+#include "pixmaps/vader2a2.xpm"
+#include "pixmaps/vader2b2.xpm"
+#include "pixmaps/vader1a2.xpm"
+#include "pixmaps/vader1b2.xpm"
+#include "pixmaps/vader3a2.xpm"
+#include "pixmaps/vader3b2.xpm"
+#include "pixmaps/spacer2.xpm"
 
 
 
@@ -109,11 +116,11 @@ SillyInvader :: ~SillyInvader()
 
 
 void
-SillyInvader :: initPicture( const char *file, const char *file2 )
+SillyInvader :: initPicture(  )
 {
 
-    pix1 = new QPixmap( file );
-    pix2 = new QPixmap( file2 );
+    pix1 = new QPixmap( vader1a2 );
+    pix2 = new QPixmap( vader1b2 );
 
     if ( pix1->isNull() ) 
 	fatal( "init failure" );
@@ -156,11 +163,11 @@ CleverInvader :: ~CleverInvader()
 
 
 void
-CleverInvader :: initPicture( const char *file, const char *file2 )
+CleverInvader :: initPicture(  )
 {
 
-    pix1 = new QPixmap( file );
-    pix2 = new QPixmap( file2 );
+    pix1 = new QPixmap( vader2a2 );
+    pix2 = new QPixmap( vader2b2 );
 
     if ( pix1->isNull() ) 
 	fatal( "init failure\n ");
@@ -202,11 +209,11 @@ FatInvader :: ~FatInvader()
 
 
 void
-FatInvader :: initPicture( const char *file, const char *file2 )
+FatInvader :: initPicture( )
 {
 
-    pix1 = new QPixmap( file );
-    pix2 = new QPixmap( file2 );
+    pix1 = new QPixmap( vader3a2 );
+    pix2 = new QPixmap( vader3b2 );
   
     if ( pix1->isNull() ) 
 	fatal( "init failure" );
@@ -252,10 +259,10 @@ BigBoss :: ~BigBoss()
 
 
 void
-BigBoss :: initPicture( const char *file )
+BigBoss :: initPicture( )
 {
   
-    pix = new QPixmap( file );
+    pix = new QPixmap( spacer2 );
     if ( pix->isNull() ) 
       fatal( "cannot init boss" );
 }

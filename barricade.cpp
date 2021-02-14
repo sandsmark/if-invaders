@@ -1,13 +1,14 @@
 #include "barricade.h"
 
+#include "pixmaps/barricade2.xpm"
 
 
 
 
-BarricadeSegment :: BarricadeSegment( int off, const char *filename )
+BarricadeSegment :: BarricadeSegment( int off )
 {
 
-    lump = new QPixmap( filename );
+    lump = new QPixmap( wall3 );
     if ( lump->isNull() ) 
 	fatal( "no segment pix" );
 

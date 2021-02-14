@@ -24,7 +24,7 @@ class Shuttle
 
 public:
   
-    Shuttle( int sp, int x, int y, const char *file = SHUTTLEPIX );
+    Shuttle( int sp, int x, int y );
     ~Shuttle(){}
 
     void move( QPaintDevice*, int lo, int hi, int dir );
